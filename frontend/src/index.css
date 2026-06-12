@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-text-main bg-surface-dim font-sans antialiased;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-surface rounded-xl shadow-panel border border-border;
+  }
+}
+
+/* Leaflet Overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.leaflet-control-container .leaflet-top {
+  z-index: 40 !important;
+}
