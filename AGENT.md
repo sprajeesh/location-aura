@@ -55,3 +55,4 @@ npm run dev
 
 ## MUST NOT DO
 - **DO NOT push directly to the `main` branch.** All changes must be pushed to a feature or fix branch.
+- **DO NOT commit or push any changes** without explicit instruction from the user.
