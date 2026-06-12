@@ -21,11 +21,11 @@ L.Icon.Default.mergeOptions({
     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-function MapUpdater({ center }: { center: [number, number] }) {
+function MapUpdater({ center, zoom }: { center: [number, number], zoom: number }) {
   const map = useMap();
   useEffect(() => {
-    map.flyTo(center, 14);
-  }, [center, map]);
+    map.flyTo(center, zoom);
+  }, [center, zoom, map]);
   return null;
 }
 
@@ -50,7 +50,7 @@ export default function MapContainer({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MapUpdater center={center} />
+      <MapUpdater center={center} zoom={data ? 14 : 5} />
       {data && (
         <Marker position={[data.location.lat, data.location.lon]}>
           <Popup>Searched Location</Popup>
