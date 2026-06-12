@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Search } from 'lucide-react';
 import { analyzeLocation } from '../services/api';
-import { AnalyzeResponse } from '../types';
+import type { AnalyzeResponse } from '../types';
 
 interface Props {
   onData: (data: AnalyzeResponse) => void;

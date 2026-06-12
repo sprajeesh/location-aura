@@ -8,7 +8,7 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { AnalyzeResponse } from "../types";
+import type { AnalyzeResponse } from "../types";
 
 // Fix for default markers
 delete (L.Icon.Default.prototype as any)._getIconUrl;

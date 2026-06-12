@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { AnalyzeResponse } from '../types';
+import type { AnalyzeResponse } from '../types';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 

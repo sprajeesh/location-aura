@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import MapContainer from './containers/MapContainer'
 import SidebarContainer from './containers/SidebarContainer'
-import { AnalyzeResponse } from './types'
+import type { AnalyzeResponse } from './types'
 
 function App() {
   const [data, setData] = useState<AnalyzeResponse | null>(null);
