@@ -52,3 +52,7 @@ npm run dev
 - **Extensibility:** The backend must be designed to easily add new data sources in the future.
 - **Frontend Types:** `verbatimModuleSyntax` is enabled. You MUST use type-only imports for TypeScript types (e.g., `import type { AnalyzeResponse } from './types'`).
 - **Tailwind Config:** The project uses standard Tailwind CSS v3 structure (`tailwind.config.js`, `postcss.config.js`). Do not upgrade to v4 without restructuring the configuration.
+
+## MUST NOT DO
+- **DO NOT push directly to the `main` branch.** All changes must be pushed to a feature or fix branch.
+- **DO NOT commit or push any changes** without explicit instruction from the user.
